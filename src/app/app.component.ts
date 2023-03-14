@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'day31';
+  disabled = false
+
+  toggleInput() {
+    console.log("button clicked")
+    this.disabled = this.disabled
+  }
+
+  newInputValue(abc: any) {
+    console.log(abc)
+  }
+
+
+  inputValue = ""
+  printValue() {
+    console.log(this.inputValue);
+  }
 }
